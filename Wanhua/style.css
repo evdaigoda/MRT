@@ -1,0 +1,11 @@
+.h1 {
+  float: left;
+  background-color:#E3E3E3;
+  width: 200px;
+ height: 8600px;
+}
+.content{
+    width: 1400px;
+    height: 300px;
+    float: inline-start;
+}
