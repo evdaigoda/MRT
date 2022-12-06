@@ -4,6 +4,7 @@
   <meta charset="UTF-8"
   <title>萬華區</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js></script>
 </head>
 
 <body>
@@ -76,5 +77,21 @@
     <p>圖片來源：https://img.ihappyday.tw/2019/09/1570593221-4b1a71bce79c02a5361437be608227c4.jpg</p>
     <h4>柳隅茶舍是位於於龍山寺地下街傳統復古茶舍，提供一人一組壺具、在地好茶品茗享受，以及茶點，讓旅客在古樸典雅的舒適環境，體驗泡茶的樂趣、享用一杯好茶。</h4>
 </div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+
+<script> 
+    $(function(){
+        $('BackTop').click(function(){           
+            $('html,body').animate({scrollTop:0},333);
+        });
+        $(window).scroll(function(){
+            if($(this).scrollTop()>300){
+              $('#BackTop').fadeIn(222);
+            }else{
+               $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
+    });
+</script>                                                      
 </body>
 </html>
